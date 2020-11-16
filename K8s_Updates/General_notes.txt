@@ -1,0 +1,22 @@
+
+#By default (without rolling updates),
+
+#Day 2 K8s, need to do rolling update
+#DAY to Day rolling updates 
+
+Rolling Updates, (change a deployment spec)
+with rolling updates, when a deployment is updated, it happens progressively
+The Deployment controls multiple ReplicaSets
+Each RepliaSet is a group of identical 
+
+Two to be aware of
+
+maxUnavailable and maxSerge
+
+There will always be at least replicas-maxUnavailable pods available
+-If you set 10 and max unavailbale 3
+
+there will never be more than replicas+maxSurge pods in total
+
+there will therefore be up to maxUnavailable+maxSurge pods being updated. 
+
